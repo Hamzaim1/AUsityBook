@@ -1,0 +1,68 @@
+<?php
+/*
+ * Controler 
+ */
+
+class mainController
+{
+
+	public static function helloWorld($request,$context)
+	{
+		
+	
+		$context->mavariable="hello world";
+		if(context::getSessionAttribute('user') != null) 
+				
+				
+	return context::SUCCESS;
+		
+	}
+
+	public static function superTest($request,$context)
+	{
+		$context->mavariable1=$request['param1'];
+		$context->mavariable2=$request['param2'];
+		return context::SUCCESS;
+	}
+	public static function index($request,$context)
+	{
+		return context::SUCCESS;
+	}
+	
+	public static function login($context,$request){
+
+		if(isset($_REQUEST['log']) && isset($_REQUEST['pass']))
+		{	
+		$returnLogin = utilisateurTable::getUserByLoginAndPass($_REQUEST['log'], $_REQUEST['pass']);
+			if($returnLogin == false)
+			{
+			}		
+			else 
+			{
+
+				context::setSessionAttribute("user",$returnLogin);
+			}
+		
+		}
+		 else
+        {
+            echo "welcome : ".$_SESSION['user']." vous etes déjas connecté  ... ";
+        }				
+		return context::SUCCESS;
+
+	}
+	public static function profil($context,$request){
+		return context::SUCCESS;
+	}
+	public static function deconnexion($request,$context)
+	{
+	session_destroy();
+	return context::SUCCESS;
+	
+	}
+	 
+		
+	}
+
+
+?>

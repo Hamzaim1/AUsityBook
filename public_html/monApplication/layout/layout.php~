@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+  <head>
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     
+   <div>
+<?php 
+	if(context::getSessionAttribute('user')){
+	echo 'Bonjour Mr '.context::getSessionAttribute('user')[0]['nom'].' '.context::getSessionAttribute('user')[0]['prenom'];
+	echo '<br><input type="submit" value="Déconnexion">';
+	if(isset($context->notification)) echo $context->notification;}
+?>
+  </div>
+  <?php include($template_view); ?>
+
+  </body>
+
+</html>

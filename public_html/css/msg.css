@@ -1,0 +1,75 @@
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    resize: both;
+	overflow: auto;  
+	position: fixed;
+	height:400px;
+    overflow-x:hidden;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+}
+
+.msg {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+}
+
+.msg::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.msg .image-utilisateur {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+
+.time-right {
+    float: right;
+    color: #aaa;
+}
+
+
+
+.img12{
+	width:200px;
+	height:200px;
+	}
+.chat-body{
+	height:50%;
+   }
+
+#mydiv{
+	top:65%;
+	left:58%;
+	width:500px;
+
+	
+	}
+.chat-info{
+	max-height:400px;
+
+}

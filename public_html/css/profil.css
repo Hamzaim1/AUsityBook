@@ -1,0 +1,210 @@
+html,body {
+    background: #efefef;
+ 
+}
+.profilBody {
+  max-width: 1250px;
+  margin: 30px auto 30px;
+  padding: 0 !important;
+  width: 90%;
+  background-color:#fff;
+}
+
+header {
+  background: #eee;
+  background-image: url("https://image.noelshack.com/fichiers/2017/38/2/1505775648-annapurnafocus.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  height: 250px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  margin-top: -120px;
+  border-radius: 100px;
+  border: 4px solid #fff;
+}
+
+
+.name {
+  margin-top: 20px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18pt;
+  color: #777;
+}
+
+.info {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11pt;
+  color: #aaa;
+}
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #484052; 
+  border-color: #B3AECC; 
+  width:150px;
+	height:40px;
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+	
+  color: #ffffff; 
+  background-color: #7F7D80; 
+  border-color: #B3AECC; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+.btn-sample.disabled, 
+.btn-sample[disabled], 
+fieldset[disabled] .btn-sample, 
+.btn-sample.disabled:hover, 
+.btn-sample[disabled]:hover, 
+fieldset[disabled] .btn-sample:hover, 
+.btn-sample.disabled:focus, 
+.btn-sample[disabled]:focus, 
+fieldset[disabled] .btn-sample:focus, 
+.btn-sample.disabled:active, 
+.btn-sample[disabled]:active, 
+fieldset[disabled] .btn-sample:active, 
+.btn-sample.disabled.active, 
+.btn-sample[disabled].active, 
+fieldset[disabled] .btn-sample.active { 
+  background-color: #484052; 
+  border-color: #B3AECC; 
+} 
+ 
+.btn-sample .badge { 
+  color: #484052; 
+  background-color: #ffffff; 
+}
+
+.decon
+{
+	margin-left:1050px;
+
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+
+	
+}
+
+
+
+
+.desc-stat {
+  margin-top: -15px;
+  font-size: 10pt;
+  color: #bbb;
+}
+
+.desc {
+  text-align: center;
+  margin-top: 25px;
+  margin: 25px 40px;
+  color: #999;
+  font-size: 11pt;
+  font-family: "Open Sans";
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+}
+
+.amies {
+  display:         flex;
+  list-style-type: none;
+  width:           300px;
+  flex-wrap:       wrap;
+}
+
+
+
+.amie_div {
+	
+	margin-top:30px;
+	margin-left:30px;
+	
+	
+}
+
+
+
+
+.amie_div > ul {
+	height:270px;
+	width:65%;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  
+  border: 2px solid #ccc;
+  
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.amie_div > ul > li {
+  padding: 10px 20px;
+  
+  border-bottom: 1px solid #ccc;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  &:nth-child(even) {
+    background: #f8f8f8;
+  }
+
+
+.post_div {
+	margin-left:20px;
+	
+}
+
+
+
+.top {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: 0px 0px 5px 0px;
+  padding-top: 10px;
+}
+.well{
+	width:60%;
+}
+
+.post_div{
+	width:60%;
+}
